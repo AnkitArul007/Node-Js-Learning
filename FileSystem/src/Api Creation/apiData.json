@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Where in an HTML document is the correct place to refer to an external style field?",
+        "a": "In the HEAD section",
+        "b": "In the BODY section",
+        "c": "At the end of the document",
+        "d": "All of the above",
+        "ans": "ans1"
+    },
+    {
+        "question": "Which HTML tag is used to define an internal style sheet?",
+        "a": "SCRIPT",
+        "b": "CSS",
+        "c": "STYLE",
+        "d": "HEAD",
+        "ans": "ans3"
+    },
+    {
+        "question": "Which HTML attribute is used to define inline styles?",
+        "a": "styles",
+        "b": "style",
+        "c": "class",
+        "d": "font",
+        "ans": "ans2"
+    },
+    {
+        "question": "How do you insert a comment in a css file?",
+        "a": " 'this is a comment ",
+        "b": " //this is a comment ",
+        "c": " //this is a comment// ",
+        "d": " /*this is a comment*/ ",
+        "ans": "ans4"
+    },
+    {
+        "question": "Which property is used to change the background color?",
+        "a": "background color",
+        "b": "bgcolor",
+        "c": "color",
+        "d": "background-color",
+        "ans": "ans4"
+    },
+    {
+        "question": "Which CSS property is used to change the text color of an element?",
+        "a": "color",
+        "b": "text-color",
+        "c": "fgcolor",
+        "d": "All of the above",
+        "ans": "ans1"
+    },
+    {
+        "question": "Which CSS property controls the text size?",
+        "a": "font-style",
+        "b": "font-size",
+        "c": "text-size",
+        "d": "text-style",
+        "ans": "ans2"
+    },
+    {
+        "question": "How do you make each word in a text start with capital letter?",
+        "a": "You can't do that with CSS",
+        "b": "text-style: capitalize",
+        "c": "transform: capitalize",
+        "d": "text-transform: capitalize",
+        "ans": "ans4"
+    },
+    {
+        "question": "Which property is used to change the font of an element?",
+        "a": "font-family",
+        "b": "font-weight",
+        "c": "font-style",
+        "d": "All of the above",
+        "ans": "ans1"
+    },
+    {
+        "question": "What type of language CSS is?",
+        "a": "Designing Language",
+        "b": "Mark-Up Language",
+        "c": "Object Based Language",
+        "d": "Scripting Language",
+        "ans": "ans1"
+    }
+]

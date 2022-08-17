@@ -1,0 +1,28 @@
+https://api.openweathermap.org/data/2.5/weather?q=Bhagalpur&appid=1b6fbaf8ced49d8edc2907cd1fe5c991
+
+
+
+  {
+    coord: { lon: 87, lat: 25.25 },
+    weather: [ [Object] ],
+    base: 'stations',
+    main: {
+      temp: 305.29,
+      feels_like: 308.28,
+      temp_min: 305.29,
+      temp_max: 305.29,
+      pressure: 1001,
+      humidity: 52,
+      sea_level: 1001,
+      grnd_level: 995
+    },
+    visibility: 10000,
+    wind: { speed: 2.54, deg: 258, gust: 3.1 },
+    clouds: { all: 44 },
+    dt: 1660747129,
+    sys: { country: 'IN', sunrise: 1660693588, sunset: 1660740368 },    
+    timezone: 19800,
+    id: 1276300,
+    name: 'Bhāgalpur',
+    cod: 200
+  }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-cont{
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 1rem 1rem rgba(211, 211, 211, 0.831);
+    background-color: #dde8f8;
+}
+
+.weather-icon{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.icon{
+    font-size: 3rem;
+    color: gold;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.temp-text{
+    font-size: xx-large;
+    margin-bottom: -0.5rem;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width:768px){
+    .main-cont{
+        width: 60vw;
+    }
+}
+
+
+@media screen and (max-width:572px){
+    .main-cont{
+        width: 70vw;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="main-cont">
+        <div class="weather-icon">
+            <i class="fa-regular fa-sun icon"></i>
+        </div>
+        <div class="info">
+            <h2 class="location"><i class="fa-solid fa-location-crosshairs"></i>{%city%}, {%country%}</h2>
+            <p id="date">WED | JAN 13 | 10:46 AM</p>
+            <h2 id="temp" class="temp-text">{%tempVal%}&deg;F</h2>
+            <p id="temp_max_min">{%minTemp%}&deg;F | {%maxTemp%}&deg;F</p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        const date = document.getElementById('date');
+        const currentDate = new Date();
+        console.log(currentDate)
+        let currDay = currentDate.getDay();
+        let days = ["Sun" ,"Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+        let currMon = currentDate.getMonth();
+        let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        date.textContent = `${days[currDay]} | ${months[currMon]} ${currentDate.getDate()} | ${currentDate.getHours()}:${currentDate.getMinutes()}`;
+    </script>
+</body>
+</html>
